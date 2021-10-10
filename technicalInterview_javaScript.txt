@@ -1,0 +1,44 @@
+자바스크립트
+
+Jquery
+자바스크립트의 라이브러리로 자바스크립트를 조금 더 편리하게 사용하기 위한 언어.
+달러 표시를 이용해서 코드가 간결해짐.
+
+부트스트랩
+CSS를 다루는 프레임 워크
+
+Ajax
+자바스크립트의 라이브러리 중 하나.
+Asynchronous Javascript and XML (비동기식 자바스크립트와 XML)
+
+XMLHttpRequest
+전체 페이지를 새로 고치지 않고 페이지의 일부만을 위한 데이터를 로드하는 기법.
+자바스크립트를 이용한 비동기 통신, 클라이언트와 서버간에 Json 또는 XML 형태의 데이터를 주고받는 기술 > 자원과 시간을 아낄 수 있음.
+형식
+$.ajax({ url : "", type : 'POST' / 'GET', // 데이터를 post 혹은 get 방식으로 전송 한 뒤 응답을 받는 경우 data : data, // 요청과 함께 서버로 데이터를 전송할 string, map contentType : 'application/json', // 기본 값은 application/x-www-form-urlencodede; charset=UTF-8 dataType : 'json', 'text'...// 서버측에서 전송받은 데이터 형식 xml, json, text.., async : true, // 기본값은 비동기식의 true, false로 설정하면 동기식 success : function(res) { }, error : function(err) { } }); $.each(data, function(index, item) { }
+
+Json
+자바스크립트의 객체를 만드는 표현식으로 key, value로 이루어져 있음. 경량의 DATA를 교환하는 방식.
+
+동기, 비동기
+동기 : A, B가 있다면 A를 수행하는 중에는 B를 수행하지 못하는 것을 의미함. 요청을 보낸 뒤 응답을 받아야지 다음 동작이 이루워짐. 설계가 간단하고 직관적이지만 시스템 전체적인 효율이 저하 된다.
+비동기 : A를 수행하면서 B를 수행하는 것. 동기 방식보다 복잡하지만 자원을 효율적으로 사용 할 수 있음.
+
+콜백함수 Callback Function
+https://webruden.tistory.com/126
+어떤 특정 함수가 실행을 마친 뒤에 실행되는 함수.
+사용하는 이유 중 하나는 비동기 데이터를 처리하기 위함. 다른 함수의 실행이 끝날 때 까지 특정 코드가 실행되지 않게 기다려주는 방법.
+
+이벤트 루프
+자바스크립트는 싱글 스레드로 그 자체로는 비동기 작업을 할 수 없지만, 웹 브라우저의 도움을 받아서 구현이 가능함. 이벤트 루프는 웹 브라우저에서 사용되는 기능 중 하나.
+
+DOM
+Document of Model의 약자.
+this는 모든 함수 스코프 내에 자동으로 설정되는 특수한 식별자로 함수를 호출하는 방법에 의해 결정.
+function 키워드 대신 화살표(⇒)를 이용해 간략한 방법으로 함수 선언
+
+== 와 ===의 차이점
+==은 값의 일치 여부만 확인하고 ===은 타입도 같이 확인함.
+
+
+
